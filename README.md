@@ -23,7 +23,7 @@ address | false | string | only legacy format is supported today | N/A
 
 Response:
 Param |	required | data type | description
----|---|---|---|---|---
+---|---|---|---|---
 txHash | true | string |  | N/A
 address | true | string | The BCH address which send out the transaction to set its MEMO name
 name | true | string | The updated MEMO account name
@@ -39,7 +39,7 @@ address | false | string | only legacy format is supported today | N/A
 
 Response:
 Param |	required | data type | description
----|---|---|---|---|---
+---|---|---|---|---
 txHash | true | string |  | N/A
 address | true | string | The BCH address which send out the transaction to post msg
 msg | true | string | The msg posted by the address
@@ -56,7 +56,7 @@ address | false | string | only legacy format is supported today | N/A
 
 Response:
 Param |	required | data type | description
----|---|---|---|---|---
+---|---|---|---|---
 txHash | true | string |  | N/A
 address | true | string | The BCH address which send out the transaction to follow someone else
 destAddress | true | string | The address being followed
@@ -74,7 +74,7 @@ address | false | string | only legacy format is supported today | N/A
 
 Response:
 Param |	required | data type | description
----|---|---|---|---|---
+---|---|---|---|---
 txHash | true | string |  | N/A
 address | true | string | The BCH address which send out the transaction to like a post
 destTxHash | true | string | The transaction being liked
@@ -91,7 +91,7 @@ address | false | string | only legacy format is supported today | N/A
 
 Response:
 Param |	required | data type | description
----|---|---|---|---|---
+---|---|---|---|---
 txHash | true | string |  | N/A
 address | true | string | The BCH address which send out the transaction
 name | true | string | The updated MEMO account name
