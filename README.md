@@ -17,14 +17,16 @@ GET /account
 This API returns the MEMO account data.
 
 Request:
+
 Param |	required | data type | description | default
----|---|---|---|---|---
+---|---|---|---|---
 address | false | string | only legacy format is supported today | N/A
 
 Response:
+
 Param |	required | data type | description
----|---|---|---|---
-txHash | true | string |  | N/A
+---|---|---|---
+txHash | true | string | N/A
 address | true | string | The BCH address which send out the transaction to set its MEMO name
 name | true | string | The updated MEMO account name
 lastUpdateTime | true | datetime | The transaction time
@@ -32,15 +34,17 @@ lastUpdateTime | true | datetime | The transaction time
 # Memopost
 GET /memopost
 This API returns the MEMO post data.
-Request:
+Request
+
 Param |	required | data type | description | default
----|---|---|---|---|---
+---|---|---|---|---
 address | false | string | only legacy format is supported today | N/A
 
 Response:
+
 Param |	required | data type | description
----|---|---|---|---
-txHash | true | string |  | N/A
+---|---|---|---
+txHash | true | string | N/A
 address | true | string | The BCH address which send out the transaction to post msg
 msg | true | string | The msg posted by the address
 lastUpdateTime | true | datetime | The transaction time
@@ -50,14 +54,16 @@ GET /follow
 This API returns the MEMO follow/unfollow data
 
 Request:
+
 Param |	required | data type | description | default
----|---|---|---|---|---
+---|---|---|---|---
 address | false | string | only legacy format is supported today | N/A
 
 Response:
+
 Param |	required | data type | description
----|---|---|---|---
-txHash | true | string |  | N/A
+---|---|---|---
+txHash | true | string | N/A
 address | true | string | The BCH address which send out the transaction to follow someone else
 destAddress | true | string | The address being followed
 isFollow | true | boolean | True means follow, False means unfollow
@@ -68,14 +74,16 @@ GET /account
 This API returns the MEMO like data
 
 Request:
+
 Param |	required | data type | description | default
----|---|---|---|---|---
+---|---|---|---|---
 address | false | string | only legacy format is supported today | N/A
 
 Response:
+
 Param |	required | data type | description
----|---|---|---|---
-txHash | true | string |  | N/A
+---|---|---|---
+txHash | true | string | N/A
 address | true | string | The BCH address which send out the transaction to like a post
 destTxHash | true | string | The transaction being liked
 lastUpdateTime | true | datetime | The transaction time
@@ -85,14 +93,16 @@ GET /posts
 This API is a high level aggregation across account/post/like. It tells who (name) post what(msg) at when(time), and how many people like it.
 
 Request:
+
 Param |	required | data type | description | default
----|---|---|---|---|---
+---|---|---|---|---
 address | false | string | only legacy format is supported today | N/A
 
 Response:
+
 Param |	required | data type | description
----|---|---|---|---
-txHash | true | string |  | N/A
+---|---|---|---
+txHash | true | string | N/A
 address | true | string | The BCH address which send out the transaction
 name | true | string | The updated MEMO account name
 msg | true | string | The msg posted by the address
