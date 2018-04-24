@@ -33,7 +33,7 @@ lastUpdateTime | true | datetime | The transaction time
 
 # Memopost
 GET /memopost
-This API returns the MEMO post data.
+This API returns the MEMO post data. The items are ordered by lastUpdateTime in desending.
 Request
 
 Param |	required | data type | description | default
@@ -90,7 +90,7 @@ lastUpdateTime | true | datetime | The transaction time
 
 # Posts
 GET /posts
-This API is a high level aggregation across account/post/like. It tells who (name) post what(msg) at when(time), and how many people like it.
+This API is a high level aggregation across account/post/like. It tells who (name) post what(msg) at when(time), and how many people like it. The items are ordered by timestamp in desending.
 
 Request:
 
